@@ -54,16 +54,15 @@
 			<a href="index.html" class="navbar-brand ml-lg-2">
 				<h1 class="m-0 display-4"><span class="text-primary">Claidy</span><span class="text-primary">T</span></h1>
 			</a>
-		
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav m-auto py-0">
-					
 					<li class="nav-item"><a href="https://claidytaguran.github.io/porttaguran.github.io/">Portfolio</a></li>
 					<li class="nav-item"><a href="#work">Gallery Works</a></li>
 					<li class="nav-item"><a href="#contact">Contacts</a></li>
 				</ul>
 			</div>
 		</ul>
+		
 		<!-- Include the Bootstrap JavaScript library -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.5.0/js/bootstrap.bundle.min.js"></script>
@@ -300,6 +299,16 @@
 		<script src="js/jquery.simple-text-rotator.js"></script>
 		<!-- custom -->
 		<script src="js/custom.js"></script>
+
+		<script>
+			// Toggle the navbar collapse on mobile devices
+			$(document).ready(function () {
+				$(".navbar-toggler").on("click", function () {
+					$("#navbarCollapse").toggleClass("show");
+				});
+			});
+		</script>
+		
 
 	</body>
 </html>
